@@ -4,8 +4,7 @@ class SimpleMembership{
         this.cost = 50;
     }
 }
-
-class StandartMembership{
+class StandardMembership{
     constructor(name){
         this.name = name;
         this.cost = 150;
@@ -42,7 +41,8 @@ const factory = new MemberFactory();
 const members = [
     factory.create('Eugene', 'simple'),
     factory.create('Elena', 'premium'),
-    factory.create('Vlad', 'standard')
+    factory.create('Vlad', 'standard'),
+    factory.create('Petr')
 ]
 
 members.forEach(m =>{
